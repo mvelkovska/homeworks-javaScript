@@ -6,7 +6,7 @@ var numberOfPhones=30;
 
 var calculateTax=parseFloat((taxRate*priceOfPhone)/100);
 
-var calculateFinalPriceForOnePhone=parseFloat(priceOfPhone-calculateTax);
+var calculateFinalPriceForOnePhone=parseFloat(priceOfPhone+calculateTax);
 
 var calculateFinalPriceForAllPhones=parseFloat(calculateFinalPriceForOnePhone*30);
 
