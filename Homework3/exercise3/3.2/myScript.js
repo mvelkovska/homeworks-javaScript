@@ -7,7 +7,7 @@ function f(convertToDog, convertToHuman) {
     convertToHuman /= 7;
     let result = convertToHuman.toFixed(1);
 
-    alert("Your dog's age is " + convertToDog + " years, and your human's age is " + result + " years");
+  return  alert("Your dog's age is " + convertToDog + " years, and your human's age is " + result + " years");
 
 }
 
