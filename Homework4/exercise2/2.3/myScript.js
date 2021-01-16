@@ -2,8 +2,7 @@ function total(anArray) {
     let flag = false;
     let totals = 0;
     for (let checking of anArray) {
-        if (!(Number.isInteger(checking))) {
-            alert("ERROR,SOME ELEMENT/S OF YOUR ARRAY ARE NOT NUMBERS");
+        if (val(checking) == true) {
             flag = true;
             break;
         }
@@ -14,6 +13,18 @@ function total(anArray) {
     }
     if (flag == false) {
         return alert(`The sum is: ${totals}`);
+    }
+}
+
+function val(arr) {
+   // if (!(Number.isInteger(arr))) {
+    if(isNaN(arr)){
+        alert("ERROR,SOME ELEMENT/S OF YOUR ARRAY ARE NOT NUMBERS");
+        return true;
+
+    }
+    else {
+        return false;
     }
 }
 
