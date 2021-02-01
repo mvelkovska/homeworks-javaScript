@@ -1,23 +1,20 @@
-let titleDiv = document.getElementById("title");
-let contentDiv = document.getElementById("content");
 
-function weightInChicken(w, content) {
-  let result = w * 0.5;
-  content.innerHTML = `<strong>The weight in CHICKEN is: ${result}</strong>`;
+function createTable() {
+  r = prompt("Redici:");
+  k = prompt("Koloni:");
 
+  for (var i = 0; i < parseInt(r); i++) {
+    var red = document.getElementById('myTable').insertRow(i);
+    for (var j = 0; j < parseInt(k); j++) {
+      var kelija = red.insertCell(j);
+      kelija.innerHTML = "Redica-" + i + " Kolona-" + j;
+    }
+  }
 }
 
-function printing(w, title) {
-  title.innerHTML += `<strong> Let's convert.You entered: ${w} </strong>`;
-  weightInChicken(weight, contentDiv);
-}
 
-let weight = parseFloat(prompt("Enter weight:"));
+let kopce = document.getElementById("myButton");
 
-if(!(isNaN(weight))){
-printing(weight, titleDiv);
-}
-
-else  {
-  alert("Please enter number!");
-}
+kopce.addEventListener("click", function () {
+  createTable();
+});
