@@ -10,14 +10,17 @@ function Student(name, surname, age) {
     this.age = age;
 }
 
+myDiv.innerHTML += `<ol>`;
 myButton.addEventListener("click", function () {
     var arr = [];
     var s;
     s = new Student(myName.value, mySurname.value, myAge.value);
     arr.push(s);
 
-    myDiv.innerHTML += `<ol>`;
+   
     myDiv.innerHTML += `<li>${myName.value} ${mySurname.value} - ${myAge.value}</li>`;
-    myDiv.innerHTML += `<ol>`;
+   
 });
+
+myDiv.innerHTML += `<ol>`;
 

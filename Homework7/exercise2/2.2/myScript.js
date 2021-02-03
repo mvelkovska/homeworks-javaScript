@@ -15,3 +15,4 @@ var arrayOfObjects = [
         readingStatus: false
     }];
 
+
