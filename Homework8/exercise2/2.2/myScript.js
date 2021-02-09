@@ -7,7 +7,7 @@ let theMessage = $("#message");
 $(document).ready(function () {
 
     theButton.on("click", function () {
-        if (theInput.val() === "" || !(theColor.val())) { 
+        if (theInput.val() === "") {  // Bojata e vekje defaultno izbrana crna da bide,nema nachin kako bi se proverila?
             theMessage.text(`Please fill out the text field`);
             
 
