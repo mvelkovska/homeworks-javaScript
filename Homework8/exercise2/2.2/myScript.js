@@ -7,8 +7,9 @@ let theMessage = $("#message");
 $(document).ready(function () {
 
     theButton.on("click", function () {
-        if (theInput.val() === "") { // po default bojata e crna, ne moze da se validira,veke e izbrana,izbor e na korisnikot dali ke ja smeni?
+        if (theInput.val() === "" || !(theColor.val())) { 
             theMessage.text(`Please fill out the text field`);
+            
 
         }
         else {

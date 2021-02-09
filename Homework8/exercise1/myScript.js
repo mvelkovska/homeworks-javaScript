@@ -9,6 +9,7 @@ $(document).ready(function () {
 
         if (theInput.val() == "") {
             theDiv.html(`<h1>You haven't entered anything</h1>`);
+            
 
         }
         else {

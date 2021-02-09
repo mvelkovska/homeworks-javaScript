@@ -10,6 +10,7 @@ $(document).ready(function () {
     theButton.on("click", function () {
         if (theInput.val() === "" || theColor.val() === "") {
             theMessage.text(`Please fill all the fields!`); //h3 for messages
+            
 
         }
         else {
